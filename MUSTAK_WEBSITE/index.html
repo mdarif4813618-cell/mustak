@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>MUSTAK </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">MUSTAK<span>.</span></a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#social">Social</a>
+      <a href="#study">Studey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Cover: only N E X O R A is the main cover text -->
+    <section class="cover" id="home">
+      <div class="cover-content">
+        <h1>M U S T A K</h1>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section class="profile-section">
+      <div class="profile-card">
+        <div class="avatar-wrap">
+          <img id="profileImage" alt="Profile picture"
+            src="Images.jpeg">
+          
+        </div>
+
+        <div class="profile-info">
+          <span class="online"><i></i> PERSONAL PROFILE</span>
+          <h2 id="displayName">MUSTAK SHARIER ARIF</h2>
+          <p id="displayBio">Hello! My name is Mustak Shariar Arif. I am currently studying in Intermediate 2nd Year at Lakshmipur Government College. 
+        </p>
+         
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-card">
+        <div class="about-icon">✦</div>
+        <div>
+          <h3 id="aboutHeading">Hello, I'm MUSTAK!</h3>
+          <p id="aboutText">My name is Mustak Shariar Arif. I am currently studying in Intermediate 2nd Year at Lakshmipur Government College. </p>
+          <p class="muted">Student · Developer · Content Creator</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social media -->
+    <section class="section f2-social" id="social">
+        <p class="eyebrow">◈ LET'S CONNECT ◈</p>
+
+        <h2>My <span>Social Links</span></h2>
+
+        <p class="section-desc">
+            Join the F2 Gamer community and stay connected!
+        </p>
+
+        <div class="f2-social-card">
+            <div class="f2-social-icon">F2</div>
+
+            <h3>F2GAMER IS BACK</h3>
+            <P class="f2-social-subtitle">GAMING . HIGHLIGHTS</P>
+
+            <a href="https://www.youtube.com/@f2gamerisback"
+            class="f2-youtube-btn"
+            target="_blank"
+            rel="noopener noreferrer">
+            
+            <span class="f2-yt-icon">▶️</span>
+            <span>SUBSCRIBE</span>
+            <SPan class="f2-yt-arrow">↗️</SPan>
+
+            </a>
+            <div class="f2-social-divider"></div>
+            <p>
+                <span class="f2-online-dot"></span>LEVEL UP YOUR GAME
+            </p>
+        </div>
+
+
+        <div class="social-grid" id="socialGrid"></div>
+
+
+
+    </section>
+
+    
+
+    <!-- Study Information -->
+<section class="section" id="study">
+
+  <div class="study-heading-card">
+  <span class="study-heading-badge">🎓 MY EDUCATION</span>
+  <h2>Study <span>Information</span></h2>
+  <p>My educational journey and academic information.</p>
+</div>
+
+  <div class="study-card">
+
+    <div class="study-icon">🎓</div>
+
+    <div class="study-info">
+      <span class="study-badge">CURRENT EDUCATION</span>
+
+      <h3>Intermediate 2nd Year</h3>
+
+      <p class="study-label">INSTITUTION</p>
+      <p class="study-value">
+        Lakshmipur Government College
+      </p>
+
+      <div class="study-divider"></div>
+
+      <p class="study-label">STUDENT NAME</p>
+      <p class="study-value">
+        MUSTAK SHARIAR ARIF
+      </p>
+
+      <div class="study-divider"></div>
+
+      <p class="study-label">EDUCATION LEVEL</p>
+      <p class="study-value">
+        Higher Secondary Education
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+
+      <div class="contact-card">
+        <div class="contact-icon">✉</div>
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p id="emailText">mdarif4813618@gmail.com</p>
+        </div>
+        <a id="emailBtn" class="btn btn-primary"
+           href="mailto:mdarif4813618@gmail.com">Email Me</a>
+      </div>
+      <br>
+      <div class="contact-card">
+        <div class="contact-icon">☏</div>
+        <div class="contact-info">
+          <h3>WhatsApp</h3>
+          <p id="emailText">https://wa.me/8801606640426</p>
+        </div>
+        <a id="emailBtn" class="btn btn-primary"
+           href="https://wa.me/8801606640426">Call Me</a>
+      </div>
+      
+    </section>
+
+    
+
+  </main>
+
+  <footer>
+    <a href="#home" class="footer-logo">M U S T A K</a>
+    <p>Designed by MUSTAK</p>
+    <p>© <span id="year"></span> MUSTAK. All rights reserved.</p>
+  </footer>
+
+  <!-- Edit profile popup -->
+  <dialog id="profileDialog" class="modal">
+    <form id="profileForm">
+      <button type="button" class="close-btn" data-close="profileDialog">×</button>
+      <h2>Edit Profile</h2>
+      <label for="nameInput">Your name</label>
+      <input id="nameInput" maxlength="70" value="MUSTAK SHARIER ARIF" required>
+      <label for="bioInput">Your bio</label>
+      <textarea id="bioInput" maxlength="240" rows="3">I am student</textarea>
+      <button class="btn btn-primary full-width" type="submit">Save Profile</button>
+    </form>
+  </dialog>
+
+  <!-- Edit social links popup -->
+  <dialog id="linksDialog" class="modal">
+    <form id="linksForm">
+      <button type="button" class="close-btn" data-close="linksDialog">×</button>
+      <h2>Social Media Links</h2>
+      <label for="youtubeInput">YouTube</label>
+      <input id="youtubeInput" type="url" placeholder="https://youtube.com/@username">
+      <label for="facebookInput">Facebook</label>
+      <input id="facebookInput" type="url" placeholder="https://facebook.com/username">
+      <label for="instagramInput">Instagram</label>
+      <input id="instagramInput" type="url" placeholder="https://instagram.com/username">
+      <label for="tiktokInput">TikTok</label>
+      <input id="tiktokInput" type="url" placeholder="https://tiktok.com/@username">
+      <button class="btn btn-primary full-width" type="submit">Save Links</button>
+    </form>
+  </dialog>
+
+  <!-- Edit UID popup -->
+  <dialog id="uidDialog" class="modal">
+    <form id="uidForm">
+      <button type="button" class="close-btn" data-close="uidDialog">×</button>
+      <h2>Free Fire UID</h2>
+      <label for="uidInput">Enter your UID</label>
+      <input id="uidInput" inputmode="numeric" maxlength="30"
+        placeholder="Your Free Fire UID">
+      <button class="btn btn-primary full-width" type="submit">Save UID</button>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+
+</body>
+</html>
